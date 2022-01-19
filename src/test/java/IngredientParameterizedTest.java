@@ -6,11 +6,11 @@ import praktikum.Ingredient;
 import praktikum.IngredientType;
 
 @RunWith(Parameterized.class)
-public class IngredientTypeTest {
+public class IngredientParameterizedTest {
 
     private final IngredientType type;
 
-    public IngredientTypeTest(IngredientType type) {
+    public IngredientParameterizedTest(IngredientType type) {
         this.type = type;
     }
 

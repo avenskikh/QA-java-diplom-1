@@ -9,13 +9,13 @@ public class BunTest {
     public void getNameTest() {
         Bun bun = new Bun("Иван", 100);
         String actual = bun.getName();
-        Assert.assertEquals(bun.name, actual);
+        Assert.assertEquals("не совпал name", bun.name, actual);
     }
 
     @Test
     public void getPriceTest() {
         Bun bun = new Bun("Иван", 100);
-        Float actual = bun.getPrice();
-        Assert.assertEquals(bun.price, actual, 0);
+        float actual = bun.getPrice();
+        Assert.assertEquals("не совпал price", bun.price, actual, 0);
     }
 }
